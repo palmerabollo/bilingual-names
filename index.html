@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bilingual Names</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A bilingual name is a name of a person that is spelled exactly the same in two languages.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+        crossorigin="anonymous" />
+    <link href="flatui/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+    <link href="assets/css/demo.css" rel="stylesheet">
+    <style>
+        .vertical-align {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-headline geopattern">
+        <h1 class="demo-logo">
+            <div class="logo"></div>
+            Bilingual Names
+            <small>find names that are spelled the same in several languages</small>
+        </h1>
+    </div>
+
+    <div class="demo-container container">
+        <div class="row lead">
+            <div class="mx-auto vertical-align lead">
+                <span>
+                    Find names that exist in &nbsp;
+                </span>
+
+                <select id="first-language" class="form-control form-control-lg select select-primary language-selector"
+                    data-toggle="select">
+                    <option></option>
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+
+                <span>
+                    &nbsp;and&nbsp;
+                </span>
+
+                <select id="second-language" class="form-control form-control-lg select select-primary language-selector"
+                    data-toggle="select">
+                    <option></option>
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div id="results" class="lead">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h3 class="footer-title">About</h3>
+                    <p>Do you like this site? Let me know <a href="http://twitter.com/palmerabollo" target="_blank">on Twitter</a></p>
+
+                    <a class="footer-brand" href="http://twitter.com/palmerabollo" target="_blank">@palmerabollo</a>
+                </div>
+
+                <div class="col-5">
+                    <div class="footer-banner">
+                        <h3 class="footer-title">Ads</h3>
+                        <ul>
+                            <li>your ad here</li>
+                            <li>your ad here</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+
+    <script>
+        $('.geopattern').geopattern(new Date().toString(), { color: "#48c9b0" });
+    </script>
+
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+    <script src="flatui/scripts/flat-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/application.js"></script>
+
+    <script src="names.js"></script>
+</body>
+
+</html>
